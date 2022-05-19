@@ -57,12 +57,23 @@ a{
     position: absolute;
     left: 300px;
     bottom: 300px;
+    animation: clouds 30s infinite;
 }
 
 .top-cloud{
     position: absolute;
     right: 300px;
     top: 50px;
+    animation: clouds 20s infinite;
+}
+
+@keyframes clouds {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(1000px);
+    }
 }
 
 .border-img{
@@ -120,6 +131,24 @@ a{
     text-decoration: none;
   }
 
+  .footer-link{
+    color: #11cdd4;
+    color: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    color: -moz-linear-gradient(top, #11cdd4, #11999e);
+    color: -ms-linear-gradient(top, #11cdd4, #11999e);
+    color: -o-linear-gradient(top, #11cdd4, #11999e);
+    color: linear-gradient(to bottom, #11cdd4, #11999e);
+  }
+
+  .footer-link:hover{
+    color: #30e3cb;
+    color: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    color: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    color: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    color: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    color: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  }
+
   span{
       text-decoration: underline;
   }
@@ -130,4 +159,47 @@ a{
 
   .bottom-container p{
       color: #EAF6F6;
+  }
+
+  .top-container h1{
+      transition: 1.6s ease-in-out;
+  }
+
+  .top-container h1:hover{
+      transform: rotate(360deg);
+  }
+
+  @media only screen and (max-width: 480px) {
+      .mountain{
+          width: 260px;
+      }
+      h1{
+          font-size: 4.6rem;
+      }
+      h2{
+          font-size: 1.9rem;
+      }
+      .skill-row{
+        width: 80%;
+        text-align: center;
+        margin: 60px auto;
+    }
+    .coding-img{
+        float: none;
+        margin: 0 3.5rem;
+    }
+    
+    .web-img{
+       float: none;
+       margin: 0 1.5rem;
+    }
+
+    .skills{
+        text-align: center;
+    }
+
+    .bottom-container a{
+        margin: 5px 5px;
+        color: #11999E;
+    }
   }
