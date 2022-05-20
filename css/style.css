@@ -55,24 +55,24 @@ a{
 
 .bottom-cloud{
     position: absolute;
-    left: 300px;
+    right: 7px;
     bottom: 300px;
     animation: clouds 30s infinite;
 }
 
 .top-cloud{
     position: absolute;
-    right: 300px;
+    right: 7px;
     top: 50px;
     animation: clouds 20s infinite;
 }
 
 @keyframes clouds {
     from{
-        transform: translateX(-500px);
+        transform: translateX(-195vw);
     }
     to{
-        transform: translateX(1000px);
+        transform: translateX(1vw);
     }
 }
 
@@ -171,7 +171,7 @@ a{
 
   @media only screen and (max-width: 480px) {
       .mountain{
-          width: 180px;
+          width: 260px;
       }
       h1{
           font-size: 4.6rem;
@@ -201,5 +201,6 @@ a{
     .bottom-container a{
         margin: 5px 5px;
         color: #11999E;
+        font-size: 15px;
     }
   }
